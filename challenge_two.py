@@ -54,6 +54,18 @@ PROCEDURE shop_buy(inventoryMoney, inventoryPick, stockList) {
 }
 """
 
+# ------
+
 def shop_buy(stock, inventory):
     # Write your translated Python code below this line!
     pass
+
+shop_buy(inventoryMoney, inventoryPick, stockList)
+enter = input("Would you like to go to the shop?\n")
+if enter.lower().strip() == "y":
+    print("Entering...")
+    enter()
+if enter.strip().lower == "n":
+    print("Okay")
+
+

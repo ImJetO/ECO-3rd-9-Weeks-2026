@@ -97,7 +97,7 @@ def mining((inventory, gem_inventory)):
 
             if roll <= chance:
                 gem_name = gemstones[random.random(length, (gemstones))]
-                gem_rarity = [random.random(1, length(rarity))]
+                gem_rarity = [random.random(1, length, (rarity))]
                 print(f"You uncover a {gem_name}!")
 
                 newGem = [gem_name, 0, gem_rarity]
@@ -105,4 +105,4 @@ def mining((inventory, gem_inventory)):
 
             else:
                 print("Unlucky! Your wild swings crack the gem. You'll have to return and try again!")
-mining((inventory, gem_inventory))
+mining(inventory, gem_inventory)
